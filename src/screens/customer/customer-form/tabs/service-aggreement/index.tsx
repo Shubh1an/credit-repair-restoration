@@ -212,7 +212,7 @@ export const ServiceAgreementComponent = connect(
                 <i className="fa fa-trash mr-2"></i>
               </ButtonComponent>
             )}
-
+          {/* xc */}
           {!AuthService.isFieldHidden(
             props.AuthRules,
             "CreateServiceAgreement"
@@ -254,7 +254,7 @@ export const ServiceAgreementComponent = connect(
                         />
                       )}
                   </th> */}
-                  <th style={{ width: "5%" }}>Download</th>
+                  {/* <th style={{ width: "5%" }}>Download</th> */}
                   <th style={{ width: "20%" }}>Name</th>
                   <th style={{ width: "20%" }}>Signed</th>
                   <th style={{ width: "10%" }}>Date Entered</th>
@@ -282,7 +282,7 @@ export const ServiceAgreementComponent = connect(
                               />
                             )}
                           </td> */}
-                          <td>
+                          {/* <td>
                             {!AuthService.isFieldHidden(
                               props.AuthRules,
                               "DownloadDisputeLetter"
@@ -293,7 +293,7 @@ export const ServiceAgreementComponent = connect(
                               ) && (
                                 <FileDownload filePath={file?.pathLocation} />
                               )}
-                          </td>
+                          </td> */}
                           <td>{file?.name}</td>
 
                           <td>{file?.isSigned + ""}</td>
