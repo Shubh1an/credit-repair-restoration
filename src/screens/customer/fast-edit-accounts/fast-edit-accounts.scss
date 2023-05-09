@@ -1,0 +1,63 @@
+@import "../../../assets/styles/mixins.scss";
+
+.fast-edit-accounts {
+    .no-accounts {
+        @include flex(space-around, center, column);
+        height: 300px;
+    }
+    .show-more-panel {
+        box-shadow: 2px 2px 2px $lightGray;
+        .show-more-link {
+            text-decoration: underline;
+        }
+    }
+    .all-accounts-list {
+        .section-spinner {
+            align-items: flex-start;
+            .spinner-border {
+                margin-top: 100px;
+            }
+        }
+    }
+    .copy-link {
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .letter-warning {
+        background-color: yellow;
+        border-radius: 4px;
+        box-shadow: 0px 1px 4px 4px $lightGray;
+    }
+    .fasttrack-check {
+        width: 80%;
+        background-color: $lightGray;
+        padding: 5px 10px 3px 5px;
+        border-radius: 4px;
+    }
+    .full-details-section {
+        height: calc(100vh - 180px);
+        .make-radio-gap {
+            padding: 4px;
+            background-color: $lightGray;
+            border-radius: 3px;
+            margin-bottom: 2px;
+            .chk-vertical {
+                .ace-checkbox {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .inserted-row {
+            .form-group {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                .input-group {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

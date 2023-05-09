@@ -1,0 +1,13 @@
+.suggestionDiv {
+  position: absolute !important;
+  background: #f7f7f7 !important;
+  width: 92.5% !important;
+  z-index: 100 !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+.suggestionText{
+    background-color: "#fff" !important;
+    padding-left: 10px !important;
+    border-radius: 4px !important;
+  }

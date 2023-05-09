@@ -1,0 +1,45 @@
+@import "../../../../assets/styles/mixins.scss";
+
+.company-service-tabs {
+    .tabs-container {
+        @include flex(start, center);
+        column-gap: 10px;
+        border-bottom: 1px solid $lightGray;
+        .serv-tab {
+            padding: 10px 20px;
+            border-radius: 5px 5px 0px 0px;
+            border: 1px solid $lightGray;
+            background-color: $white;
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            color: $black;
+            cursor: pointer;
+            border-bottom: 4px solid transparent;
+            &.active {
+                border-bottom: 4px solid $black;
+            }
+            &:hover {
+                border-bottom: 4px solid $black;
+            }
+            .service-data {
+            }
+
+            .green-tick {
+            }
+        }
+    }
+}
+.company-category {
+    width: 100%;
+    position: relative;
+    .office-all-categories {
+        width: 100%;
+        @include flex(space-between, start);
+        gap: 15px;
+        flex-wrap: wrap;
+        .lobicard-custom-control {
+            width: 32%;
+        }
+    }
+}

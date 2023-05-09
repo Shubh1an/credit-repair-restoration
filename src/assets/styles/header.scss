@@ -1,0 +1,19 @@
+@import "mixins.scss";
+
+.header-search-box {
+    .lead-cust-search-box {
+        .searchbox {
+            @media screen and (min-width: 768px) {
+                min-width: 300px;
+            }
+            input {
+                border-bottom-color: $white !important;
+                padding: 9px 8px 5px 25px !important;
+            }
+            .cross-icon {
+                right: 10px !important;
+                top: 4px !important;
+            }
+        }
+    }
+}

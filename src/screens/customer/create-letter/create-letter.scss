@@ -1,0 +1,143 @@
+@import "../../../assets/styles/mixins.scss";
+
+.custom-confirm-dialog {
+    max-width: 60%;
+    width: 45%;
+    .modal-header {
+        background-color: $redDanger !important;
+        color: $white;
+    }
+}
+.create-letter {
+    .chk-vertical {
+        flex-wrap: wrap;
+        height: 130px;
+        width: 200px;
+        .ace-checkbox {
+            margin-bottom: 10px;
+            &:nth-child(1) {
+                .check-text {
+                    margin-top: -6px;
+                }
+            }
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                line-height: 26px;
+            }
+        }
+    }
+    .select-source {
+        .chk-vertical {
+            .ace-checkbox {
+                &:nth-child(2) {
+                    .check-text {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .letter-accounts-list {
+        .chk-vertical {
+            width: 150px;
+        }
+    }
+    .letter-editor {
+        min-height: 400px;
+    }
+    .cc-list {
+        .items {
+            padding: 20px 30px;
+            .chk-vertical {
+                flex-wrap: wrap;
+                height: 300px;
+                width: auto;
+            }
+        }
+    }
+    fieldset {
+        &.letter-fieldset {
+            border: 1px solid $black2;
+            legend {
+                background-color: $gray1;
+                color: $white;
+                padding: 10px 20px;
+                border-radius: 6px;
+                margin-left: 40px;
+            }
+        }
+    }
+    .create-letter-header {
+        .card-title {
+            .widget-title {
+                display: flex;
+            }
+        }
+    }
+    .head-value {
+        color: green;
+        text-shadow: green 1px 1px 1px;
+    }
+    .cus-round-info {
+        .round-info {
+            display: flex;
+            justify-content: space-between;
+            .details {
+                display: flex;
+                justify-content: space-between;
+                font-size: 13px;
+            }
+        }
+    }
+    .search-for-letters {
+        .search-icon {
+            font-size: 15px;
+        }
+        .loading-icon,
+        .cross-icon {
+            top: 9px;
+        }
+        .loading-icon {
+            .spinner-border-sm {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+    .create-letter-final {
+        .bureaus-entries {
+            .form-inline {
+                input {
+                    width: 70px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .content-center {
+        display: flex;
+        justify-content: center;
+    }
+}
+.letter-statuses-html {
+    table {
+        width: 100%;
+        th {
+            background-color: $gray14;
+            color: $black;
+            vertical-align: middle;
+            padding: 10px 10px !important;
+            font-size: 12px !important;
+            text-align: center;
+        }
+        td {
+            vertical-align: middle;
+            padding: 10px 10px !important;
+            text-align: center;
+            font-size: 12px !important;
+            border-bottom: 1px solid $lightGray;
+        }
+    }
+}

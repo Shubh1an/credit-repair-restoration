@@ -1,0 +1,58 @@
+@import "src/assets/styles/mixins.scss";
+
+body {
+	min-height: auto;
+	.container-center {
+		.login-area {
+			.card {
+				border: none;
+				.custom_head {
+					width: 100%;
+				}
+				.card-body {
+					.login-spinner {
+						color: $white !important;
+						cursor: not-allowed !important;
+						margin-left: -10px;
+					}
+					.btn-login {
+						cursor: pointer;
+					}
+					&.login-card {
+						width: 100%;
+						.messages {
+							color: $red;
+							font-size: 13px;
+							font-weight: bold;
+							margin-bottom: 10px;
+						}
+						.form-control {
+							width: 100%;
+						}
+						.login-buttons {
+							padding-top: 20px;
+							@include flex(space-between);
+							.btn {
+								padding: 5px 15px;
+							}
+							.login {
+								padding-left: 20px;
+								padding-right: 20px;
+							}
+							.register {
+								font-size: 14px;
+							}
+							.forget-link {
+								font-size: 12px;
+								margin-left: 10px;
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@import "../../../../../assets/styles/mixins.scss";
+
+.dt-rounds {
+    tr {
+        td,
+        th {
+            text-align: center;
+        }
+    }
+}
+.rounds {
+    tr {
+        &.current-round {
+            td {
+                font-weight: bold;
+            }
+        }
+    }
+}
+.days-overdue {
+    font-size: 25px;
+    font-weight: bold;
+}

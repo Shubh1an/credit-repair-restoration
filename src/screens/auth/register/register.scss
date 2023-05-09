@@ -1,0 +1,31 @@
+@import "src/assets/styles/mixins.scss";
+
+body {
+    min-height: auto;
+    .container-center {
+        .login-area {
+            .card {
+                border: none;
+                .custom_head {
+                    width: 100%;
+                }
+                .card-body {
+                    width: 100%;
+                    .register-buttons {
+                        .btn {
+                            padding: 5px 15px;
+                        }
+                        .register {
+                            margin-right: 20px;
+                            font-size: 14px;
+                        }
+                        .login {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

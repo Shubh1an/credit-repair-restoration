@@ -1,0 +1,8 @@
+.signature {
+  display: block;
+  margin: 100px auto;
+  border: 2px solid gainsboro;
+  width: 100%;
+  height: 200px;
+  border-radius: 2%;
+}

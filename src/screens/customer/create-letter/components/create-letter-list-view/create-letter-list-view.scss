@@ -1,0 +1,17 @@
+@import "../../../../../assets/styles/mixins.scss";
+
+.create-letter-list-view-tabs {
+    @include flex(center);
+    .nav-tabs .nav-item {
+        margin-right: 20px;
+    }
+}
+
+.create-letter-list-view {
+    .section-spinner {
+        align-items: start;
+        .spinner-border {
+            margin-top: 8%;
+        }
+    }
+}

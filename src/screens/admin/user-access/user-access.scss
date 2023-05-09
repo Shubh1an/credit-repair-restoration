@@ -1,0 +1,48 @@
+@import "../../../assets/styles/mixins.scss";
+
+.access-container {
+    min-height: 50vh;
+    .all-screens-list {
+        padding: 10px;
+        .my-acc-demo {
+            box-shadow: none !important;
+            .my-acc-node {
+                margin: 10px 0;
+                border-radius: 3px;
+                .my-acc-header {
+                    padding: 20px !important;
+                    background-color: $gray10;
+                    &.header-is-expanded {
+                        background-color: $lightGray;
+                    }
+                    cursor: pointer;
+                    .title-container {
+                        flex: 1;
+                    }
+                    .toggle-container {
+                        width: 30px;
+                    }
+                }
+                .accordion-panel {
+                    &.is-expanded {
+                        max-height: fit-content !important;
+                    }
+                    .my-acc-body {
+                        padding: 20px;
+                        .acc-left-body {
+                            @include flex(center, space-between, column);
+                            button {
+                                margin-bottom: 5px;
+                                text-transform: capitalize;
+                                &.active {
+                                    background-color: $primary;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

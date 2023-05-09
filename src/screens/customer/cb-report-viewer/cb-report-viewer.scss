@@ -1,0 +1,121 @@
+@import "../../../assets/styles/mixins.scss";
+
+.cb-viewer {
+    input[type="text"] {
+        border: none;
+        background-color: transparent;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .classTH1 {
+        color: $white;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .classTH2 {
+        color: $white;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .classTH3 {
+        color: $white;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .headerSection {
+        font-size: 15px;
+        background-color: $gray11;
+        color: $white;
+        padding: 10px 20px;
+        border-radius: 3px 3px 0px 0px;
+    }
+    .headerDescription {
+        padding: 3px 10px;
+    }
+    .leftHeader {
+        text-align: right;
+        font-weight: bold;
+    }
+    table tr td:first-child {
+        text-align: right;
+        vertical-align: top;
+        width: 20%;
+        padding: 3px 4px 3px 4px;
+    }
+
+    #tblCreditScore,
+    #tblPersonal,
+    #tblCreditSummary,
+    .tblAccSummaryMonth,
+    .tblAccountHistory,
+    #tblCreditEnquiries,
+    #tblPublicRecords {
+        width: 100%;
+        margin-bottom: 20px;
+        table-layout: fixed;
+
+        tr {
+            td {
+                border-right: 1px solid #ccc;
+                padding: 4px 5px;
+                &:not(:first-child) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .tblAccSummaryMonth {
+        tr {
+            td {
+                &:first-child {
+                    width: 20%;
+                }
+            }
+        }
+    }
+    .enquiryHistoryHeaderInq {
+        th {
+            padding: 5px 10px !important;
+            background-color: #218b90;
+            font-weight: bold;
+            color: $white;
+            vertical-align: top;
+            font-size: 14px;
+            padding: 5px 10px 5px 40px !important;
+        }
+    }
+    .clsCreditEnquiriesMain {
+        td {
+            padding: 5px 10px 5px 40px !important;
+            text-align: left !important;
+            &:first-child {
+                text-align: left !important;
+            }
+        }
+    }
+    .clssummaryRowHeader {
+        background-color: #3b4751;
+        color: $white;
+        border: 1px solid #3b4751;
+        padding: 5px 10px;
+        text-align: left;
+        border-radius: 3px 3px 0px 0px;
+    }
+    .clssummaryRowHeader {
+        padding: 5px !important;
+        text-align: left !important;
+        font-weight: bold;
+        border-radius: 3px 3px 0px 0px;
+    }
+    .last2Years {
+        color: $white;
+        border: 1px solid #3b4751 !important;
+        text-align: left !important;
+        padding: 4px 10px 5px 10px;
+    }
+}

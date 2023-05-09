@@ -1,0 +1,12 @@
+.crop-image-preview {
+    max-width: 260px;
+    img {
+        max-width: 100%;
+    }
+}
+.all-buttons {
+    gap: 100px;
+    button {
+        min-width: 200px;
+    }
+}

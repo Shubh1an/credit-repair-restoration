@@ -1,0 +1,98 @@
+@import "variables.scss";
+
+@mixin Font_BrandonGrotesqueWebbold($font_size: 10px, $color: $black, $line_height: 1.1) {
+    font-family: "BrandonGrotesqueWeb-bold";
+    font-size: $font_size;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: $line_height;
+    letter-spacing: normal;
+    color: $color;
+}
+
+@mixin Font_SimpleNunitoSans($font_size: 11px, $color: $black) {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: $font_size;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color;
+}
+
+@mixin h-border($thickness: 1px, $color: $lightGray) {
+    border-bottom: $thickness solid $color;
+}
+@mixin flex($j-content: flex-start, $a-items: center, $direction: row) {
+    display: flex;
+    justify-content: $j-content;
+    align-items: $a-items;
+    flex-direction: $direction;
+}
+
+@mixin mx-custom-scrollbar($width: 5) {
+    &::-webkit-scrollbar {
+        width: #{$width}px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $white1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $gray8;
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+        &:hover {
+            background: $gray4;
+        }
+    }
+}
+@mixin rotate($angle) {
+    -webkit-transform: rotate($angle);
+    -moz-transform: rotate($angle);
+    -ms-transform: rotate($angle);
+    -o-transform: rotate($angle);
+    transform: rotate($angle);
+}
+@mixin border_bottom_gradient($width: 1px, $colorFrom: $lightGray, $colorTo: $light-light-gray) {
+    border-bottom-width: $width;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, $colorFrom, $colorTo) 1 100%;
+}
+@mixin border_right_gradient($width: 1px, $colorFrom: $lightGray, $colorTo: $light-light-gray) {
+    border-right-width: $width;
+    border-right-style: solid;
+    border-image: linear-gradient(to bottom, $colorFrom, $colorTo) 1 100%;
+}
+@mixin border_left_gradient($width: 1px, $colorFrom: $lightGray, $colorTo: $light-light-gray) {
+    border-left-width: $width;
+    border-left-style: solid;
+    border-image: linear-gradient(to bottom, $colorFrom, $colorTo) 1 100%;
+}
+@mixin border_top_gradient($width: 1px, $colorFrom: $lightGray, $colorTo: $light-light-gray) {
+    border-top-width: $width;
+    border-top-style: solid;
+    border-image: linear-gradient(to right, $colorFrom, $colorTo) 1 100%;
+}
+@mixin fs($size: 12px) {
+    font-size: $size !important;
+}
+@mixin blink($time: 1s) {
+    animation: blinker $time linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@mixin blinkSlow($time: 1s) {
+    animation: blinkerSlow $time linear infinite;
+}
+
+@keyframes blinkerSlow {
+    50% {
+        opacity: 0.3;
+    }
+}

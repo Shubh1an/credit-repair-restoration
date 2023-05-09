@@ -1,0 +1,199 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../admin/user-access/user-access.scss";
+
+.report-importer {
+    .import-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .import-section {
+        .sub-title {
+            font-size: 12px;
+            padding: 15px 5px;
+            background-color: $gray10;
+        }
+        .personal-details,
+        .credit-score,
+        .credit-summary,
+        .account-history,
+        .credit-inquiries,
+        .public-records {
+            padding: 15px 5px;
+            textarea {
+                height: 70px;
+            }
+        }
+        .account-history {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            margin-right: -25px;
+            .clsAccountHistoryMain {
+                border: 1px solid $light-blue;
+                width: 99.9%;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                .accountHistorySinglerow {
+                    background-color: $light-blue;
+                    padding: 5px;
+                    font-weight: bold;
+                }
+                .tblAccountHistory {
+                    padding-right: 25px;
+                    padding-top: 10px;
+                }
+                .historybg {
+                    background-color: $light-light-gray;
+                    color: $black;
+                    padding: 4px 10px 5px 10px;
+                    margin-top: 10px;
+                }
+                .tblAccSummaryMonth {
+                    width: 100%;
+                    font-size: 13px;
+                    margin-top: 10px;
+                    .leftHeader {
+                        text-align: right;
+                        font-weight: bold;
+                        width: 150px;
+                        padding-right: 20px;
+                    }
+                    tr {
+                        td,
+                        th {
+                            padding: 3px 0px;
+                        }
+                    }
+                    input {
+                        padding: 3px 0px !important;
+                        background: none repeat scroll 0 0 $white;
+                        border: 1px solid $color1;
+                        color: $color2;
+                        font-size: 10px;
+                        padding: 5px;
+                        width: 93%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        #tblCreditEnquiries {
+            width: 100%;
+            tr td:first-child {
+                width: 26%;
+                text-align: right;
+                padding-right: 10px;
+            }
+            .leftHeader {
+                text-align: right;
+                font-weight: bold;
+            }
+            .clsCreditEnquiriesMain {
+                td {
+                    vertical-align: middle !important;
+                    border-top: 1px solid $lightGray;
+                    border-bottom: 1px solid $lightGray;
+                    &.clssummaryRowHeader {
+                        color: green !important;
+                        background-color: $light-blue;
+                        padding: 3px !important;
+                        text-align: left !important;
+                        font-weight: bold;
+                        border: 1px solid lightGray;
+                        border-left: 0px;
+                        border-right: 0px;
+                    }
+                    .ace-checkbox {
+                        display: inline-block;
+                        margin: 10px 0px;
+                        .check-text {
+                            display: none;
+                        }
+                        .checkmark {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 10px;
+                            &::after {
+                                width: 14px;
+                                height: 26px;
+                                margin-top: -6px;
+                                margin-left: 1px;
+                                border-width: 0 5px 5px 0;
+                                transform: rotate(37deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .public-records {
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: -25px;
+            .public-record-main {
+                border: 1px solid $lightGray;
+                width: 99.9%;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                .clssummaryRowHeader {
+                    padding: 3px !important;
+                    text-align: left !important;
+                    font-weight: bold;
+                    border-left: 0px;
+                    border-right: 0px;
+                    background-color: $light-blue;
+                    padding: 5px;
+                }
+                #tblPublicRecords {
+                    margin-top: 10px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    .impt-report-label {
+        position: absolute;
+        top: -15px;
+        background-color: $white;
+        z-index: 1002;
+        left: 35%;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding: 0 15px;
+        border-left: 3px solid $lightGray;
+        border-right: 3px solid $lightGray;
+    }
+    .access-container .all-screens-list .my-acc-demo .my-acc-node .my-acc-header {
+        background-color: $gray8;
+        &.header-is-expanded {
+            background-color: $dark;
+        }
+    }
+}
+.reactstrap-confirm {
+    &.import-confirm2 {
+        .modal-header {
+            .modal-title {
+                text-align: left;
+            }
+        }
+    }
+}
+.import-report-stats-table {
+    table {
+        tbody {
+            tr {
+                td {
+                    &:not(:first-child) {
+                        text-align: center;
+                    }
+                    &.tdlefttext {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

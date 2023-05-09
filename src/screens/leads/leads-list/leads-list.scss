@@ -1,0 +1,94 @@
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/common.scss";
+
+.lead-grid .dataTableCustomers tr td:first-child,
+.lead-grid .dataTableCustomers tr th:first-child {
+    width: 10px !important;
+}
+.customers-list {
+    &.lead-list {
+        .filter-controls {
+            padding-bottom: 20px;
+            padding: 25px 10px 35px 10px;
+        }
+        .filter-clear {
+            bottom: 2px;
+        }
+    }
+    .cust .nav-tabs .nav-item {
+        margin-right: 20px;
+        border-top: 1px solid $lightGray;
+        border-left: 1px solid $lightGray;
+        border-right: 1px solid $lightGray;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .customer-grid {
+        .card-body {
+            padding: 0;
+        }
+    }
+    .leadtypeAbsolute {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        @include flex(center, center);
+    }
+    .content {
+        min-height: 0px;
+    }
+    .todo-indicator {
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+    }
+}
+.search-options {
+    .options-label {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .chk-horizontal {
+        padding-top: 0;
+        padding-bottom: 0;
+        .checkmark {
+            height: 17px;
+            width: 17px;
+            margin-bottom: 0;
+        }
+        .check-text {
+            margin-left: 5px;
+        }
+    }
+}
+.records {
+    color: green;
+    @include fs(11px);
+}
+.no-records {
+    @include flex(space-around, center, column);
+    height: 350px;
+}
+.filter-clear {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: $anchorBlue;
+    text-transform: capitalize;
+}
+.spouse-name {
+    background-color: $gray10;
+    padding: 7px 7px 4px 10px;
+    border-radius: 3px;
+}
+.view-pass {
+    position: absolute;
+    right: 5px;
+    z-index: 100;
+}

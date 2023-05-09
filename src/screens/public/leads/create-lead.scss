@@ -1,0 +1,24 @@
+.public-leads {
+    .nostyle-public {
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+    .for-public {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .for-public-button {
+        padding: 0px 1.25rem;
+        button {
+            border-radius: 4px;
+        }
+    }
+}
+#freshworks-container {
+    display: none;
+}
+body {
+    background-color: transparent;
+}
