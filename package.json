@@ -2,6 +2,9 @@
   "name": "ace-credit-restoration",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.9.0"
+  },
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^25.0.0",
     "@ckeditor/ckeditor5-build-classic": "^25.0.0",
