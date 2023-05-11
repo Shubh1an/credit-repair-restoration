@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "12.9.0"
+    "node": "14.x"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^25.0.0",
